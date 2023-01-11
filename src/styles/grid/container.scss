@@ -1,0 +1,15 @@
+.container {
+    width: 100%;
+    padding: 0 calc($gutter / 2);
+    margin: auto;
+}
+
+@each $breakpoint, $container-max-width in $container-max-widths
+{
+    @include media-breakpoint-only($breakpoint, $grid-breakpoints)
+    {
+        .container {
+            max-width: $container-max-width;
+        }
+    }
+}

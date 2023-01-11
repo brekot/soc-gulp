@@ -1,0 +1,28 @@
+//@import "../../node_modules/swiper/swiper";
+//@import "../../node_modules/@fancyapps/ui/src/Fancybox/Fancybox.scss";
+
+// Переменные, миксины, функции
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "helpers/grid";
+
+// CSS-файлы библиотек
+@import "vendor/libs";
+
+// Основное
+@import "base/fonts";
+@import "base/normalize";
+@import "base/general";
+
+// БЭМ-блоки
+@import "../blocks/modules";
+
+/* 
+@include media-breakpoint-only(lg)
+{
+    & {
+
+    }
+}
+*/
