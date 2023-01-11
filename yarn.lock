@@ -6659,7 +6659,7 @@ bem-tools-create@bem-tools/bem-tools-create:
 
 "fsevents@patch:fsevents@^1.2.7#~builtin<compat/fsevents>":
   version: 1.2.13
-  resolution: "fsevents@patch:fsevents@npm%3A1.2.13#~builtin<compat/fsevents>::version=1.2.13&hash=18f3a7"
+  resolution: "fsevents@patch:fsevents@npm%3A1.2.13#~builtin<compat/fsevents>::version=1.2.13&hash=d11327"
   dependencies:
     bindings: ^1.5.0
     nan: ^2.12.1
@@ -6669,7 +6669,7 @@ bem-tools-create@bem-tools/bem-tools-create:
 
 "fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=18f3a7"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
   dependencies:
     node-gyp: latest
   conditions: os=darwin
@@ -7630,6 +7630,63 @@ bem-tools-create@bem-tools/bem-tools-create:
   checksum: c18e6c33e6ff6ed03a7590908b21fbcfe51950b3d2655e6e1e43ac4d3bf43ad3f956c930cea61c9fba279a38baab19ac41864f1fe34194e34eb069d4cf1eb7ba
   languageName: node
   linkType: hard
+
+"gulp@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "gulp@workspace:."
+  dependencies:
+    "@babel/core": ^7.17.5
+    "@babel/eslint-parser": ^7.17.0
+    "@babel/preset-env": ^7.16.11
+    "@babel/register": ^7.17.0
+    "@fancyapps/ui": ^4.0.26
+    babel-loader: ^8.2.3
+    bem-tools-core: bem-tools/bem-tools-core
+    bem-tools-create: bem-tools/bem-tools-create
+    browser-sync: ^2.27.7
+    del: ^6.0.0
+    dev: ^0.1.3
+    eslint: ^8.11.0
+    gulp: ^4.0.2
+    gulp-autoprefixer: ^8.0.0
+    gulp-clean-css: ^4.3.0
+    gulp-debug: ^4.0.0
+    gulp-favicons: ^3.0.0
+    gulp-file-include: ^2.3.0
+    gulp-group-css-media-queries: ^1.2.2
+    gulp-if: ^3.0.0
+    gulp-imagemin: ^7.1.0
+    gulp-newer: ^1.4.0
+    gulp-plumber: ^1.2.1
+    gulp-rename: ^2.0.0
+    gulp-replace: ^1.1.3
+    gulp-sass: ^5.1.0
+    gulp-sourcemaps: ^3.0.0
+    gulp-svg-sprite: ^1.5.0
+    gulp-watch: ^5.0.1
+    gulp-webp: ^4.0.1
+    husky: ^7.0.4
+    imagemin-giflossy: ^5.1.10
+    imagemin-jpeg-recompress: ^7.0.0
+    imagemin-mozjpeg: ^9.0.0
+    imagemin-pngquant: ^9.0.0
+    imagemin-webp: ^6.0.0
+    imagemin-zopfli: ^7.0.0
+    lint-staged: ^12.3.5
+    postcss: ^8.4.8
+    postcss-scss: ^4.0.3
+    require-dir: ^1.2.0
+    sass: ^1.49.9
+    stylelint: ^14.5.3
+    stylelint-config-standard-scss: ^3.0.0
+    stylelint-order: ^5.0.0
+    stylelint-selector-bem-pattern: ^2.1.1
+    swiper: ^8.1.4
+    webpack: ^5.70.0
+    webpack-stream: ^7.0.0
+    yargs: ^17.3.1
+  languageName: unknown
+  linkType: soft
 
 "gulplog@npm:^1.0.0":
   version: 1.0.0
@@ -9064,63 +9121,6 @@ bem-tools-create@bem-tools/bem-tools-create:
   checksum: 28a96e019269d57015fa5869f19dda5a3ed1f7b21e3e0c4ff695419bd0541547db352aa32ee4a3659e811a177b0e37a5bc1a036731e71939dd16b59808ab92bd
   languageName: node
   linkType: hard
-
-"itworks-gulp@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "itworks-gulp@workspace:."
-  dependencies:
-    "@babel/core": ^7.17.5
-    "@babel/eslint-parser": ^7.17.0
-    "@babel/preset-env": ^7.16.11
-    "@babel/register": ^7.17.0
-    "@fancyapps/ui": ^4.0.26
-    babel-loader: ^8.2.3
-    bem-tools-core: bem-tools/bem-tools-core
-    bem-tools-create: bem-tools/bem-tools-create
-    browser-sync: ^2.27.7
-    del: ^6.0.0
-    dev: ^0.1.3
-    eslint: ^8.11.0
-    gulp: ^4.0.2
-    gulp-autoprefixer: ^8.0.0
-    gulp-clean-css: ^4.3.0
-    gulp-debug: ^4.0.0
-    gulp-favicons: ^3.0.0
-    gulp-file-include: ^2.3.0
-    gulp-group-css-media-queries: ^1.2.2
-    gulp-if: ^3.0.0
-    gulp-imagemin: ^7.1.0
-    gulp-newer: ^1.4.0
-    gulp-plumber: ^1.2.1
-    gulp-rename: ^2.0.0
-    gulp-replace: ^1.1.3
-    gulp-sass: ^5.1.0
-    gulp-sourcemaps: ^3.0.0
-    gulp-svg-sprite: ^1.5.0
-    gulp-watch: ^5.0.1
-    gulp-webp: ^4.0.1
-    husky: ^7.0.4
-    imagemin-giflossy: ^5.1.10
-    imagemin-jpeg-recompress: ^7.0.0
-    imagemin-mozjpeg: ^9.0.0
-    imagemin-pngquant: ^9.0.0
-    imagemin-webp: ^6.0.0
-    imagemin-zopfli: ^7.0.0
-    lint-staged: ^12.3.5
-    postcss: ^8.4.8
-    postcss-scss: ^4.0.3
-    require-dir: ^1.2.0
-    sass: ^1.49.9
-    stylelint: ^14.5.3
-    stylelint-config-standard-scss: ^3.0.0
-    stylelint-order: ^5.0.0
-    stylelint-selector-bem-pattern: ^2.1.1
-    swiper: ^8.1.4
-    webpack: ^5.70.0
-    webpack-stream: ^7.0.0
-    yargs: ^17.3.1
-  languageName: unknown
-  linkType: soft
 
 "jest-worker@npm:^27.4.5":
   version: 27.5.1
@@ -12624,7 +12624,7 @@ bem-tools-create@bem-tools/bem-tools-create:
 
 "resolve@patch:resolve@^1.1.6#~builtin<compat/resolve>, resolve@patch:resolve@^1.1.7#~builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.4.0#~builtin<compat/resolve>":
   version: 1.22.0
-  resolution: "resolve@patch:resolve@npm%3A1.22.0#~builtin<compat/resolve>::version=1.22.0&hash=07638b"
+  resolution: "resolve@patch:resolve@npm%3A1.22.0#~builtin<compat/resolve>::version=1.22.0&hash=c3c19d"
   dependencies:
     is-core-module: ^2.8.1
     path-parse: ^1.0.7
