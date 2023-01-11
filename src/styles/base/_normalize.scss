@@ -16,7 +16,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
 	margin: 0;
-	font: 400 14px/17px 'Montserrat', sans-serif;
+	font: 400 14px/1.22 'Montserrat', sans-serif;
 	letter-spacing: -.015em;
 	color: $color-text;
 	text-align: left;
@@ -24,8 +24,32 @@ body {
 	background: $color-white url(../img/tmp.png) no-repeat center top;
 }
 
-h1, h2, h3, h5, h6,
-.h1, .h2, .h3, .h5, .h6 {
+h1, .h1 {
+	font-size: 50px;
+}
+
+h2, .h2 {
+	font-size: 48px;
+}
+
+h1, .h1,
+h2, .h2 {
+	font-family: 'Nunito Sans';
+	font-weight: 700;
+	line-height: 60px;
+	text-align: center;
+	margin: auto;
+	color: $color-black;
+	letter-spacing: 0;
+
+	b {
+		font-style: italic;
+		font-weight: 900;
+	}
+}
+
+h3, h5, h6,
+.h3, .h5, .h6 {
 	margin: 0 0 1.5rem;
 }
 
@@ -89,6 +113,12 @@ svg {
 	vertical-align: middle;
 }
 
+hr {
+	border: none;
+	border-bottom: 1px dashed $opacity1;
+	margin: 0;
+}
+
 label {
     display: block;
     margin: 0;
@@ -96,6 +126,7 @@ label {
 
 button {
 	border-radius: 0;
+	transition: .5s;
 }
 
 button:focus {
@@ -144,4 +175,8 @@ input[type="checkbox"] {
 textarea {
 	overflow: auto;
 	resize: vertical;
+}
+
+.text-center {
+	text-align: center;
 }

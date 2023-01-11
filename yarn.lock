@@ -1387,10 +1387,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fancyapps/ui@npm:^4.0.26":
-  version: 4.0.26
-  resolution: "@fancyapps/ui@npm:4.0.26"
-  checksum: 5423028f1bab759045faec8a85b1d09fabbf406d3d35f17c2eba2bab16175a63f0feaad1798e067aae8a56ea519a8b5aaea9cdcba8dbe7f7a282719535920edc
+"@fancyapps/ui@npm:^4.0.31":
+  version: 4.0.31
+  resolution: "@fancyapps/ui@npm:4.0.31"
+  checksum: 0c46695d15fc8092b942b345514f727d0d07dff3e97da824ab0a3db8978f54b38694ca603704360b053b55ba9f895adfc3b8a4de92d434e9832e71dbe3e7266c
   languageName: node
   linkType: hard
 
@@ -3705,9 +3705,9 @@ bem-tools-create@bem-tools/bem-tools-create:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001317, caniuse-lite@npm:^1.0.30001332":
-  version: 1.0.30001332
-  resolution: "caniuse-lite@npm:1.0.30001332"
-  checksum: e54182ea42ab3d2ff1440f9a6480292f7ab23c00c188df7ad65586312e4da567e8bedd5cb5fb8f0ff4193dc027a54e17e0b3c0b6db5d5a3fb61c7726ff9c45b3
+  version: 1.0.30001442
+  resolution: "caniuse-lite@npm:1.0.30001442"
+  checksum: c1bff65bd4f53da2d288e7f55be40706ee0119b983eae5a9dcc884046990476891630aef72d708f7989f8f1964200c44e4c37ea40deecaa2fb4a480df23e6317
   languageName: node
   linkType: hard
 
@@ -7639,7 +7639,7 @@ bem-tools-create@bem-tools/bem-tools-create:
     "@babel/eslint-parser": ^7.17.0
     "@babel/preset-env": ^7.16.11
     "@babel/register": ^7.17.0
-    "@fancyapps/ui": ^4.0.26
+    "@fancyapps/ui": ^4.0.31
     babel-loader: ^8.2.3
     bem-tools-core: bem-tools/bem-tools-core
     bem-tools-create: bem-tools/bem-tools-create

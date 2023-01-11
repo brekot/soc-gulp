@@ -1,18 +1,14 @@
-//@import "../../node_modules/swiper/swiper";
-//@import "../../node_modules/@fancyapps/ui/src/Fancybox/Fancybox.scss";
-
-// Переменные, миксины, функции
-@import "helpers/variables";
-//@import "helpers/mixins";
-//@import "helpers/functions";
-@import "helpers/grid";
-
-// CSS-файлы библиотек
-//@import "vendor/libs";
+@import "../../node_modules/@fancyapps/ui/src/Fancybox/Fancybox.scss";
 
 // Основное
+@import "base/variables";
+@import "base/grid";
 @import "base/fonts";
 @import "base/normalize";
+
+// Элементы
+@import "elems/title-line";
+@import "elems/btns";
 
 // БЭМ-блоки
 @import "../blocks/modules";

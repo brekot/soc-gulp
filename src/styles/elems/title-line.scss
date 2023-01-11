@@ -1,0 +1,48 @@
+.title-line {
+	position: relative;
+	max-width: 708px;
+	margin: auto;
+	display: inline-flex;
+
+	&::after,
+	&::before,
+	& > *::after,
+	& > *::before {
+		content: "";
+		height: 4px;
+		background-color: $color-link;
+		border-radius: 4px;
+		position: absolute;
+	}
+
+	&::after,
+	&::before {
+		top: -12px;
+		background-color: $color-link;
+	}
+	&::after {
+		width: 96px;
+		right: 0;
+	}
+	&::before {
+		width: 16px;
+		right: 105px;
+	}
+
+	& > * {
+
+		&::after,
+		&::before {
+			bottom: -12px;
+			background-color: $color-green;
+		}
+		&::after {
+			width: 96px;
+			left: 0;
+		}
+		&::before {
+			width: 16px;
+			left: 105px;
+		}
+	}
+}

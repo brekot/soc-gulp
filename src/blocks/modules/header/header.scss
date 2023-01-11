@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     right: 0;
-    padding: $padding-x2 0;
+    padding: 24px 0;
 
     &__inner {
         display: flex;
@@ -15,7 +15,7 @@
         color: $color-gray1;
         text-decoration: none;
         font-size: 15px;
-        margin: 0 $padding 0 0;
+        margin: 0 12px 0 0;
     }
     &__registration {
         font-weight: 500;
@@ -27,7 +27,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: $padding $padding-x2;
+        padding: 12px 24px;
         text-decoration: none;
 
         &:hover {
@@ -45,6 +45,6 @@
         color: $color-gray1;
         text-decoration: none;
         font-size: 15px;
-        margin: 0 $padding-x2 0 0;
+        margin: 0 24px 0 0;
     }
 }

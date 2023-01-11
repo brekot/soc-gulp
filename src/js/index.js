@@ -1,1 +1,1 @@
-//import { Fancybox } from "@fancyapps/ui";
+import { Fancybox, Carousel } from "@fancyapps/ui";
