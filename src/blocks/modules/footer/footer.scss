@@ -1,1 +1,24 @@
-.footer-main {}
+.footer {
+
+    &-main {
+        background: #E5F1FD;
+        padding: 32px 0;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    &-top {
+        margin: 0 0 16px;
+
+        &__logo {
+            width: 156px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &-bottom {
+        margin: 16px 0 0;
+    }
+}

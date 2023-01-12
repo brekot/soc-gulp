@@ -1,0 +1,22 @@
+.block-clients {
+    background: $color-white url(../img/bg5.png) no-repeat center bottom;
+    min-height: 537px;
+    padding: 146px 0 0;
+
+    &__carousel {
+        margin: 64px 0 0;
+    }
+    &__slide {
+        width: 120px;
+        height: 120px;
+        padding: 0;
+        margin: 0 32px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__img {
+        max-height: 100%;
+    }
+}
