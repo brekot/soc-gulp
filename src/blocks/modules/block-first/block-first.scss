@@ -1,8 +1,8 @@
 .block-first {
     /* opacity: .5; */
     background: $color-white url(../img/bg1.png) no-repeat center top;
-    padding: 130px 0 0 0;
-    /* padding: 130px 75px 0 0; */
+    padding: 130px 0 127px;
+    /* padding: 130px 75px 127px 0; */
     text-align: center;
 
     &__logo {
@@ -153,9 +153,26 @@
             height: 62px;
             width: 62px;
             position: absolute;
+            background-color: $opacity6;
+            fill: $color-link;
+            z-index: 3;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: .5s;
+
+            &:hover {
+                background-color: $color-link;
+                fill: $color-white;
+            }
+            &-icon {
+                width: 19px;
+                height: 22px;
+            }
         }
     }
 }

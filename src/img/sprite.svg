@@ -1,0 +1,9 @@
+<svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+	<symbol id="ArrowUpRight" viewBox="0 0 16 16">
+        <path d="M4 12L12 4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5.5 4H12V10.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="play" viewBox="0 0 19 22">
+        <path d="M17 7.5359C19.6667 9.0755 19.6667 12.9245 17 14.4641L6.5 20.5263C3.83333 22.0659 0.499999 20.1414 0.499999 17.0622L0.5 4.93782C0.5 1.85862 3.83333 -0.0658809 6.5 1.47372L17 7.5359Z"/>
+    </symbol>
+</svg>

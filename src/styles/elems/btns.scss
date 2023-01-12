@@ -1,62 +1,90 @@
 .btn {
-    display: inline-flex;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 32px;
-    border: none;
-    cursor: pointer;
-    background: linear-gradient(265.76deg, $gradient-color1 -20.75%, $gradient-color2 126.26%);
-    box-shadow: 0px 20px 50px $opacity-blue, inset -6px -6px 15px $opacity2, inset 6px 6px 16px $opacity3;
-    border-radius: 12px 32px;
-    font: 700 20px/27px "Nunito Sans";
-    color: $color-white;
-    position: relative;
-    letter-spacing: -.015em;
 
-    &:before {
-        content: "";
-        border: 1px solid rgba(75, 166, 250, 0.29);
+    &-one {
+        display: inline-flex;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 32px;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(265.76deg, $gradient-color1 -20.75%, $gradient-color2 126.26%);
+        box-shadow: 0px 20px 50px $opacity7, inset -6px -6px 15px $opacity2, inset 6px 6px 16px $opacity3;
         border-radius: 12px 32px;
-        position: absolute;
-        top: -4px;
-        left: -6px;
-        bottom: -4px;
-        right: -6px;
-    }
-
-    &:hover,
-    &:active {
-        background: linear-gradient(265.76deg, $gradient-color3 -20.75%, $gradient-color4 126.26%);
+        font: 700 20px/27px "Nunito Sans";
         color: $color-white;
-    }
-
-    &:hover {
+        position: relative;
+        letter-spacing: -.015em;
 
         &:before {
-            border: 1px solid $opacity-blue;
+            content: "";
+            border: 1px solid rgba(75, 166, 250, 0.29);
+            border-radius: 12px 32px;
+            position: absolute;
+            top: -4px;
+            left: -6px;
+            bottom: -4px;
+            right: -6px;
+        }
+
+        &:hover,
+        &:active {
+            background: linear-gradient(265.76deg, $gradient-color3 -20.75%, $gradient-color4 126.26%);
+            color: $color-white;
+        }
+
+        &:hover {
+
+            &:before {
+                border: 1px solid $opacity7;
+            }
+        }
+
+        &:active {
+            box-shadow: inset 6px 6px 15px $opacity2, inset -6px -6px 16px $opacity3;
+
+            &:before {
+                border: 1px solid $color-link;
+            }
+        }
+
+        &:disabled {
+            background: $opacity1;
+            box-shadow: none;
+            cursor: default;
+
+            &:before {
+                border: 1px solid $opacity1;
+            }
+        }
+
+        &_long {
+            padding: 16px 70px;
         }
     }
 
-    &:active {
-        box-shadow: inset 6px 6px 15px $opacity2, inset -6px -6px 16px $opacity3;
+    &-two {
+        display: inline-flex;
+        font: 15px/16px 'Nunito Sans';
+        justify-content: center;
+        align-items: center;
+        padding: 12px 24px;
+        text-decoration: none;
+        border: 2px solid $color-link;
+        stroke: $color-link;
+        border-radius: 100px;
+        color: $color-gray1;
 
-        &:before {
-            border: 1px solid $color-link;
+        &:hover {
+            color: $color-white;
+            stroke: $color-white;
+            background-color: $color-link;
         }
-    }
-
-    &:disabled {
-        background: $opacity1;
-        box-shadow: none;
-        cursor: default;
-
-        &:before {
-            border: 1px solid $opacity1;
+        &__icon {
+            height: 16px;
+            width: 16px;
+            margin: 0 0 0 10px;
+            fill: none;
         }
-    }
-
-    &_long {
-        padding: 16px 70px;
     }
 }

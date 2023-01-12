@@ -1,0 +1,131 @@
+.block-team {
+   /*  opacity: .5; */
+    background: $color-white url(../img/bg4.png) no-repeat center -40px;
+    padding: 272px 0 195px;
+
+    &__desc {
+        font-family: 'Nunito Sans';
+        font-weight: 700;
+        font-size: 28px;
+        letter-spacing: .02em;
+        margin: 40px 0 27px;
+
+        b {
+            font-weight: 900;
+        }
+    }
+    &__parts {
+        font-size: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 850px;
+        margin: 0 auto 52px;
+        align-items: center;
+        padding: 0 0 0 30px;
+    }
+    &__part {
+        display: flex;
+        align-items: center;
+        margin: 0 25px 12px 0;
+    }
+    &__icon {
+        height: 24px;
+        width: 24px;
+        margin: 0 16px 0 0;
+    }
+
+    &-items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -16px;
+    }
+
+    &-item {
+        background: $color-white;
+        box-shadow: 0px 20px 50px $opacity9;
+        border-radius: 12px 24px;
+        padding: 24px;
+        width: calc(100% / 3 - 32px);
+        margin: 0 16px 32px;
+
+        &__top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 0 16px;
+        }
+        &__pict {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            &::after,
+            &::before {
+                content: '';
+                position: absolute;
+                border-radius: 50%;
+                z-index: 2;
+                opacity: 0.3;
+                box-shadow: inset 4px 4px 15px rgba(255, 255, 255, 0.25);
+            }
+            &_one:before,
+            &_two:before,
+            &_three:before {
+                background: radial-gradient(50% 50% at 50% 50%, $color-green 0%, $color1 100%);
+            }
+            &_one:after,
+            &_two:after,
+            &_three:after {
+                background: radial-gradient(50% 50% at 50% 50%, $color-link 0%, $color2 100%);
+            }
+            &_one:before,
+            &_three:before {
+                width: 17px;
+                height: 17px;
+                left: 47px;
+                top: 2px;
+            }
+            &_one:after {
+                width: 8px;
+                height: 8px;
+                left: 2px;
+                top: 50px;
+            }
+            &_two:before {
+                width: 7px;
+                height: 7px;
+                left: 2px;
+                top: 8px;
+            }
+            &_two:after,
+            &_three:after {
+                width: 14px;
+                height: 14px;
+                left: 44px;
+                top: 44px;
+            }
+        }
+        &__img {
+            height: 58px;
+            width: 58px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        &__block {
+            width: calc(100% - 74px);
+        }
+        &__name {
+            font-weight: 600;
+            font-size: 16px;
+            margin: 0 0 8px;
+        }
+        &__desc {
+            font-size: 12px;
+            opacity: .7;
+        }
+        &__bottom {
+            margin: 16px 0 0;
+        }
+    }
+}
