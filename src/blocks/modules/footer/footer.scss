@@ -1,7 +1,7 @@
 .footer {
 
     &-main {
-        background: #E5F1FD;
+        background: $color-footer;
         padding: 32px 0;
         font-size: 12px;
         line-height: 15px;
@@ -9,16 +9,87 @@
 
     &-top {
         margin: 0 0 16px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
 
         &__logo {
             width: 156px;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin: 0 0 24px;
+        }
+        &__right {
+            display: flex;
+        }
+    }
+
+    &-soc {
+        display: flex;
+        align-items: center;
+
+        &__link {
+            margin: 0 10px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            fill: $color-text;
+            opacity: .3;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+        &__icon {
+            height: 24px;
+            width: 24px;
         }
     }
 
     &-bottom {
         margin: 16px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__right {
+            display: flex;
+            align-items: center;
+        }
+        &__link {
+            stroke: $color-text;
+            color: $color-text;
+            text-decoration: none;
+            margin: 0 0 0 32px;
+            fill: none;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                stroke: $color-link;
+            }
+            &-icon {
+                height: 12px;
+                width: 12px;
+                margin: 0 0 0 4px;
+            }
+        }
+    }
+}
+
+.menu-bottom {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 64px;
+
+    &__header {
+        color: $color-text;
+        opacity: .5;
+    }
+    &__link {
+        margin: 12px 0 0;
+        color: $color-text;
+        text-decoration: none;
     }
 }
