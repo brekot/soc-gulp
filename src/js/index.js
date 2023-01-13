@@ -1,11 +1,22 @@
 import { Fancybox, Carousel } from "@fancyapps/ui";
 
-/* Карусель "Нам доверяют" */
-new Carousel(document.querySelector(".block-clients__carousel"), {
-    'slidesPerPage' : 'auto',
-    'center' : true,
-    Navigation: false,
-    Dots: false,
+/* Раскрытие / Скрытие меню */
+document.querySelector('.menu-top-btn').addEventListener('click', function(){
+
+	document.querySelector('.menu-top').classList.add('menu-top_open');
+});
+
+document.querySelector('.menu-top__close').addEventListener('click', function(){
+
+	document.querySelector('.menu-top').classList.remove('menu-top_open');
+});
+
+document.querySelectorAll('.menu-top__link').forEach(el => {
+
+	el.addEventListener('click', function(){
+
+		document.querySelector('.menu-top').classList.remove('menu-top_open');
+	});
 });
 
 /* Активные пункты "Как работает сервис" при прокрутке */
@@ -28,21 +39,20 @@ window.addEventListener('scroll', () => {
 	}
 });
 
-/* Раскрытие / Скрытие меню */
-document.querySelector('.menu-top-btn').addEventListener('click', function(){
-
-	document.querySelector('.menu-top').classList.add('menu-top_open');
+/* Карусель "Нам доверяют" */
+new Carousel(document.querySelector(".block-clients__carousel"), {
+    'slidesPerPage' : 'auto',
+    'center' : true,
+    Navigation: false,
+    Dots: false,
 });
 
-document.querySelector('.menu-top__close').addEventListener('click', function(){
+/* Инпуты при вооде */
+document.querySelectorAll('.form-one__input').forEach(function(e){
 
-	document.querySelector('.menu-top').classList.remove('menu-top_open');
-});
+    e.addEventListener('input', function(){
 
-document.querySelectorAll('.menu-top__link').forEach(el => {
-
-	el.addEventListener('click', function(){
-
-		document.querySelector('.menu-top').classList.remove('menu-top_open');
-	});
+        if (this.value.length > 0) this.classList.add('form-one__input_set');
+        else this.classList.remove('form-one__input_set');
+    })
 });

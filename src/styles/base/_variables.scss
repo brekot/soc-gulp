@@ -21,6 +21,7 @@ $color-black: #000;
 $color-white: #FFF;
 $color-green: #53E962;
 $color-pink: #F96BB7;
+$color-red: #FF5656;
 
 $color-text: #434343;
 $color-link: #4BA6FA;
@@ -29,6 +30,7 @@ $color-footer: #E5F1FD;
 $color-gray1: #222;
 $color-gray2: #4A4A4A;
 $color-gray3: #373737;
+$color-gray3: #DADADA;
 
 $opacity1: rgba(0, 0, 0, 0.15);
 $opacity2: rgba(0, 0, 0, 0.1);
@@ -39,6 +41,7 @@ $opacity6: rgba(75, 166, 250, 0.22);
 $opacity7: rgba(75, 166, 250, 0.6);
 $opacity8: rgba(97, 255, 113, 0.39);
 $opacity9: rgba(148, 203, 255, 0.2);
+$opacity10: rgba(67, 67, 67, 0.7);
 
 $gradient-color1: #4BDAFA;
 $gradient-color2: #4B7CFA;
@@ -53,3 +56,8 @@ $color-cloud5: #9BDCE7;
 
 $color1: #2AD53B;
 $color2: #2888E0;
+$color2: #E0E8F0;
+
+:root {
+    --fancybox-bg: rgba(0, 0, 0, 0.3);
+}

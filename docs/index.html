@@ -29,13 +29,13 @@
                         <a href="#team" class="menu-top__link">О команде</a>
                         <a href="#rate" class="menu-top__link">Прайслист</a>
                     </nav>
-                    <a href="javascript:;" class="menu-top__registration">Зарегистрироваться</a>
+                    <a class="menu-top__registration" href="#window-one" data-fancybox>Зарегистрироваться</a>
                 </div>
 
             </div>
             <div class="header-main__right">
                 <a href="javascript:" class="header-main__lang">EN</a>
-                <a href="javascript:" class="header-main__registration">Зарегистрироваться</a>
+                <a class="header-main__registration" href="#window-one" data-fancybox>Зарегистрироваться</a>
             </div>
         </div>
     </div>
@@ -85,7 +85,7 @@
                 </div>
             </div>
 
-            <a href="javascript:;" class="btn-one btn-one_long">Получить доступ</a>
+            <a class="btn-one btn-one_long" href="#window-one" data-fancybox>Получить доступ</a>
         </div>
 
         <div class="block-first-video">
@@ -165,7 +165,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="javascript:;" class="btn-one btn-one_long">Получить доступ</a>
+                        <a class="btn-one btn-one_long" href="#window-one" data-fancybox>Получить доступ</a>
                     </div>
                     <img src="local/img/work1.png" alt="" class="block-work-item__img">
                 </div>
@@ -265,7 +265,7 @@
                 </div>
 
                 <div class="block-work__btn">
-                    <a href="javascript:;" class="btn-one btn-one_long">Получить доступ</a>
+                    <a class="btn-one btn-one_long" href="#window-one" data-fancybox>Получить доступ</a>
                 </div>
             </div>
         </div>
@@ -472,7 +472,7 @@
                             50 000 руб
                         </div>
                     </div>
-                    <a href="javascript:;" class="btn-one btn-one_middle btn-one_no-border">Получить</a>
+                    <a class="btn-one btn-one_middle btn-one_no-border" href="#window-one" data-fancybox>Получить</a>
                 </div>
             </div>
 
@@ -508,7 +508,7 @@
                 </ul>
                 <hr>
                 <div class="block-rate-item__bottom">
-                    <a href="javascript:;" class="btn-one btn-one_full-width btn-one_no-border">Получить</a>
+                    <a class="btn-one btn-one_full-width btn-one_no-border" href="#window-one" data-fancybox>Получить</a>
                 </div>
             </div>
 
@@ -549,7 +549,7 @@
                             50 000 руб
                         </div>
                     </div>
-                    <a href="javascript:;" class="btn-one btn-one_middle btn-one_no-border">Получить</a>
+                    <a class="btn-one btn-one_middle btn-one_no-border" href="#window-one" data-fancybox>Получить</a>
                 </div>
             </div>
 
@@ -713,6 +713,43 @@
         </div>
     </div>
 </footer>
+        <div class="window-one" id="window-one">
+    <a href="javascript::" class="window-one__close" data-fancybox-close>
+        <svg class="window-one__close-icon">
+            <use xlink:href="local/img/sprite.svg#close-window"></use>
+        </svg>
+    </a>
+    <div class="window-one__title">
+        Оставь контакты, получи бесплатный доступ к beta
+    </div>
+    <div class="window-one__body">
+        <div class="form-one">
+            <form action="">
+                <div class="form-one__line">
+                    <input id="phone" type="tel" class="form-one__input" value="">
+                    <label for="phone" class="form-one__label">Telegram/Телефон</label>
+                </div>
+                <div class="form-one__line">
+                    <input id="email" type="email" class="form-one__input form-one__input_error" value="value">
+                    <label for="email" class="form-one__label">Email (для входа в систему)</label>
+                    <span class="form-one__error-text">Не верное имя</span>
+                </div>
+                <div class="form-one__line">
+                    <input id="name" type="text" class="form-one__input" value="">
+                    <label for="name" class="form-one__label">Название бренда/компании</label>
+                </div>
+                <div class="form-one__btn">
+                    <button type="submit" class="btn-one btn-one_full-width">Получить доступ</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- <div class="success-alert">
+        <img class="success-alert__icon" src="local/img/sprites/sprite.svg#success" alt="">
+        <div class="success-alert__title">Спасибо!</div>
+        <div class="success-alert__text">Свяжемся с вами в течение рабочего дня и предоставим доступ</div>
+    </div> -->
+</div>
         <script src="local/js/vendor.min.js"></script>
         <script src="local/js/main.min.js"></script>
     </body>

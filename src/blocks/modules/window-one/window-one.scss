@@ -1,0 +1,61 @@
+.window-one {
+    display: none;
+    padding: 48px;
+    width: 500px;
+    border: 1px solid $color2;
+    box-shadow: 0px 20px 50px $opacity2;
+    border-radius: 12px 32px;
+
+    & .carousel__button {
+        display: none;
+    }
+
+    &__close {
+        stroke: $color-gray3;
+        fill: $color-white;
+        position: absolute;
+        top: -24px;
+        right: -24px;
+        outline: none !important;
+
+        &:hover {
+            stroke: $color-gray1;
+        }
+        &-icon {
+            width: 48px;
+            height: 48px;
+        }
+    }
+    &__title {
+        font-family: 'Nunito Sans';
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 44px;
+        text-align: center;
+        color: $color-black;
+        margin: 0 0 48px;
+    }
+}
+
+.success-alert {
+    text-align: center;
+    margin: 100px 0;
+
+    &__icon {
+        height: 60px;
+        width: 60px;
+        margin: 0 0 48px;
+    }
+    &__title {
+        font-family: 'Nunito Sans';
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 44px;
+        color: $color-black;
+        margin: 0 0 24px;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
