@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
 
 	let scrollDistance = window.scrollY;
 
-	if (window.innerWidth > 991) {
+	if (window.innerWidth > 768) {
 		document.querySelectorAll('.block-work-item').forEach((el, i) => {
 			if (el.offsetTop - 150 <= scrollDistance) {
 				document.querySelectorAll('.work-step__item').forEach((el) => {

@@ -97,4 +97,16 @@
             fill: none;
         }
     }
+
+    @include media-breakpoint-down(sm)
+	{
+        &-one {
+            padding: 16px 0;
+            width: 100%;
+        }
+        &-two {
+            padding: 12px 0;
+            width: 100%;
+        }
+    }
 }

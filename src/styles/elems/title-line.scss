@@ -45,4 +45,17 @@
 			left: 105px;
 		}
 	}
+
+	@include media-breakpoint-down(sm)
+	{
+		&_hide-sm {
+
+			&::after,
+			&::before,
+			& > *::after,
+			& > *::before {
+				display: none;
+			}
+		}
+	}
 }

@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="local/styles/main.min.css">
     </head>
     <body>
-        <div class="header-main">
+        <header class="header-main">
     <div class="container">
         <div class="header-main__inner">
 
@@ -26,8 +26,9 @@
             </div>
         </div>
     </div>
-</div>
-        <div class="block-first">
+</header>
+        <main class="main-main">
+            <div class="block-first">
     <div class="container">
         <div class="block-first__inner">
             <div class="block-first__top">
@@ -35,7 +36,7 @@
                     <img src="local/img/logo.svg" alt="">
                 </a>
             </div>
-            <div class="title-line">
+            <div class="title-line title-line_hide-sm">
                 <div class="h1">
                     <b>Все</b> рекламные площадки блогеров в вашем кармане!
                 </div>
@@ -89,7 +90,7 @@
 
     </div>
 </div>
-        <div class="block-work" id="work">
+            <div class="block-work" id="work">
     <div class="container">
         <div class="text-center">
             <div class="title-line">
@@ -203,9 +204,10 @@
 
                         <div class="block-work-cloud">
                             <div class="block-work-cloud__inner">
-                                <img src="local/img/sprites/sprite.svg#SmileyWink" alt="" class="block-work-cloud__icon">
+                                <img src="local/img/sprites/sprite.svg#SmileyWink" alt="" class="block-work-cloud__icon d-none d-md-block">
                                 <div class="block-work-cloud__block">
                                     <div class="block-work-cloud__title">
+                                        <img src="local/img/sprites/sprite.svg#SmileyWink" alt="" class="block-work-cloud__icon d-md-none">
                                         Или поручите это нам
                                     </div>
                                     <div class="block-work-cloud__text">
@@ -232,9 +234,10 @@
 
                         <div class="block-work-cloud">
                             <div class="block-work-cloud__inner">
-                                <img src="local/img/sprites/sprite.svg#SmileyWink" alt="" class="block-work-cloud__icon">
+                                <img src="local/img/sprites/sprite.svg#SmileyWink" alt="" class="block-work-cloud__icon d-none d-md-block">
                                 <div class="block-work-cloud__block">
                                     <div class="block-work-cloud__title">
+                                        <img src="local/img/sprites/sprite.svg#SmileyWink" alt="" class="block-work-cloud__icon d-md-none">
                                         Или поручите это нам
                                     </div>
                                     <div class="block-work-cloud__text">
@@ -248,14 +251,14 @@
                     </div>
                 </div>
 
-                <div class="text-center">
+                <div class="block-work__btn">
                     <a href="javascript:;" class="btn-one btn-one_long">Получить доступ</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-        <div class="block-team" id="team">
+            <div class="block-team" id="team">
     <div class="container">
         <div class="text-center">
             <div class="title-line">
@@ -264,7 +267,7 @@
                 </div>
             </div>
             <div class="block-team__desc">
-                Мы команда с опытом <b>10 лет</b> в маркетинге и <b>20+ лет</b> в IT
+                Мы команда с опытом <br class="d-md-none"><b>10 лет</b> в маркетинге и <br class="d-md-none"><b>20+ лет</b> в IT
             </div>
             <div class="block-team__parts">
                 <div class="block-team__part">
@@ -407,10 +410,10 @@
 
     </div>
 </div>
-        <div class="block-rate" id="rate">
+            <div class="block-rate" id="rate">
     <div class="container">
         <div class="text-center">
-            <div class="title-line">
+            <div class="title-line title-line_hide-sm">
                 <div class="h2">
                     Тарифы
                 </div>
@@ -424,13 +427,13 @@
                     <div class="block-rate-item__name">На минималках</div>
                     <div class="block-rate-item__desc">Для небольшой компании и на короткий срок</div>
                     <div class="block-rate-item__prices">
-                        <div class="block-rate-item__price block-rate-item__price_50">
+                        <div class="block-rate-item__price">
                             <div class="block-rate-item__label">За месяц</div>
                             <div class="block-rate-item__value">
                                 50 000 руб
                             </div>
                         </div>
-                        <div class="block-rate-item__price block-rate-item__price_50">
+                        <div class="block-rate-item__price">
                             <div class="block-rate-item__label">За год</div>
                             <div class="block-rate-item__value">
                                 500 000 руб
@@ -450,9 +453,9 @@
                 </ul>
                 <hr>
                 <div class="block-rate-item__bottom">
-                    <div class="block-rate-item__price">
-                        <div class="block-rate-item__label">Скидка до 31.12.22</div>
-                        <div class="block-rate-item__value">
+                    <div class="block-rate-item__bottom-price">
+                        <div class="block-rate-item__bottom-label">Скидка до 31.12.22</div>
+                        <div class="block-rate-item__bottom-value">
                             50 000 руб
                         </div>
                     </div>
@@ -466,13 +469,13 @@
                     <div class="block-rate-item__name">Среднесрочный</div>
                     <div class="block-rate-item__desc">Для небольшой компании и на короткий срок</div>
                     <div class="block-rate-item__prices">
-                        <div class="block-rate-item__price block-rate-item__price_50">
+                        <div class="block-rate-item__price">
                             <div class="block-rate-item__label">За месяц</div>
                             <div class="block-rate-item__value">
                                 50 000 руб
                             </div>
                         </div>
-                        <div class="block-rate-item__price block-rate-item__price_50">
+                        <div class="block-rate-item__price">
                             <div class="block-rate-item__label">За год</div>
                             <div class="block-rate-item__value">
                                 500 000 руб
@@ -501,13 +504,13 @@
                     <div class="block-rate-item__name">Максимальный</div>
                     <div class="block-rate-item__desc">Для небольшой компании и на короткий срок</div>
                     <div class="block-rate-item__prices">
-                        <div class="block-rate-item__price block-rate-item__price_50">
+                        <div class="block-rate-item__price">
                             <div class="block-rate-item__label">За месяц</div>
                             <div class="block-rate-item__value">
                                 50 000 руб
                             </div>
                         </div>
-                        <div class="block-rate-item__price block-rate-item__price_50">
+                        <div class="block-rate-item__price">
                             <div class="block-rate-item__label">За год</div>
                             <div class="block-rate-item__value">
                                 500 000 руб
@@ -527,9 +530,9 @@
                 </ul>
                 <hr>
                 <div class="block-rate-item__bottom">
-                    <div class="block-rate-item__price">
-                        <div class="block-rate-item__label">Скидка до 31.12.22</div>
-                        <div class="block-rate-item__value">
+                    <div class="block-rate-item__bottom-price">
+                        <div class="block-rate-item__bottom-label">Скидка до 31.12.22</div>
+                        <div class="block-rate-item__bottom-value">
                             50 000 руб
                         </div>
                     </div>
@@ -540,7 +543,7 @@
         </div>
     </div>
 </div>
-        <div class="block-clients">
+            <div class="block-clients">
     <div class="container">
         <div class="text-center">
             <div class="h2">
@@ -596,7 +599,8 @@
         </div>
     </div>
 </div>
-        <div class="footer-main">
+        </main>
+        <footer class="footer-main">
     <div class="container">
         <div class="footer-top">
             <div class="footer-top__left">
@@ -695,7 +699,7 @@
             </div>
         </div>
     </div>
-</div>
+</footer>
         <script src="local/js/vendor.min.js"></script>
         <script src="local/js/main.min.js"></script>
     </body>

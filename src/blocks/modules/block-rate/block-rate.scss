@@ -49,7 +49,7 @@
         &__prices {
             display: flex;
         }
-        &__price_50 {
+        &__price {
             width: 50%;
         }
         &__label {
@@ -108,22 +108,134 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-        }
 
-        &_big {
-            width: 445px;
+            &-label {
+                margin: 0 0 8px;
+                text-align: center;
+                font-size: 12px;
+            }
+            &-value {
+                font-family: 'Nunito Sans';
+                font-weight: 700;
+                font-size: 20px;
+                letter-spacing: .02em;
+                color: $color-gray3;
+            }
         }
-        &_big &__top {
-            margin: 0 0 43px;
-          }
-        &_big &__desc {
-            margin: 2px 0 55px;
+    }
+
+    @include media-breakpoint-up(xl)
+	{
+        &-item {
+
+            &_big {
+                width: 445px;
+            }
+            &_big &__top {
+                margin: 0 0 43px;
+            }
+            &_big &__desc {
+                margin: 2px 0 55px;
+            }
+            &_big &__ul {
+                margin: 43px 0;
+            }
+            &_big &__bottom {
+                margin: 43px 0 0;
+            }
         }
-        &_big &__ul {
-            margin: 43px 0;
+    }
+    @include media-breakpoint-only(xl)
+	{
+        &-item {
+            width: 350px;
+
+            &_big {
+                width: 360px;
+            }
+            &__value {
+                font-size: 16px;
+            }
+            &__bottom {
+                flex-direction: column;
+            }
+            &__bottom-price {
+                margin: 0 0 20px;
+            }
         }
-        &_big &__bottom {
-            margin: 43px 0 0;
+    }
+    @include media-breakpoint-down(lg)
+	{
+        & {
+            margin: -40px 0 0;
+
+            &__items {
+                flex-direction: column;
+            }
+
+            &-item {
+                width: 100%;
+                max-width: 510px;
+                margin: 0 0 24px;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm)
+	{
+        & {
+            margin: 0;
+
+            &__items {
+                margin: 48px 0 0;
+            }
+
+            &-item {
+                padding: 36px 16px 16px;
+
+                &__top {
+                    margin: 0 0 16px;
+                }
+                &__name {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+                &__desc {
+                    margin: 0 auto 28px;
+                    max-width: 200px;
+                }
+                &__label {
+                    margin: 0 0 4px;
+                    font-size: 12px;
+                }
+                &__value {
+                    font-size: 16px;
+                }
+                &__sale {
+                    padding: 4px 5px;
+                    font-size: 10px;
+                }
+                &__act {
+                    font-size: 12px;
+                }
+                &__ul {
+                    font-size: 14px;
+                    margin: 16px 0;
+                }
+                &__bottom {
+                    margin: 16px 0 0;
+                    flex-direction: column;
+
+                    &-price {
+                        display: flex;
+                        align-items: center;
+                        margin: 0 0 16px;
+                    }
+                    &-label {
+                        margin: 0 8px 0 0;
+                    }
+                }
+            }
         }
     }
 }
