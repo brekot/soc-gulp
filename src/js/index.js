@@ -27,3 +27,22 @@ window.addEventListener('scroll', () => {
 		});
 	}
 });
+
+/* Раскрытие / Скрытие меню */
+document.querySelector('.menu-top-btn').addEventListener('click', function(){
+
+	document.querySelector('.menu-top').classList.add('menu-top_open');
+});
+
+document.querySelector('.menu-top__close').addEventListener('click', function(){
+
+	document.querySelector('.menu-top').classList.remove('menu-top_open');
+});
+
+document.querySelectorAll('.menu-top__link').forEach(el => {
+
+	el.addEventListener('click', function(){
+
+		document.querySelector('.menu-top').classList.remove('menu-top_open');
+	});
+});
