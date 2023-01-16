@@ -1,10 +1,28 @@
 import { Fancybox, Carousel } from "@fancyapps/ui";
 
-/* Фиксируем шапку */
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', () => {
 
-	if (scrollY > 0) this.document.querySelector('.header-main').classList.add('header-main_fixed');
-	else this.document.querySelector('.header-main').classList.remove('header-main_fixed');
+	/* Фиксируем шапку */
+	if (scrollY > 0) document.querySelector('.header-main').classList.add('header-main_fixed');
+	else document.querySelector('.header-main').classList.remove('header-main_fixed');
+
+	/* Активные пункты "Как работает сервис" при прокрутке */
+	let scrollDistance = window.scrollY;
+
+	if (window.innerWidth > 767)
+	{
+		document.querySelectorAll('.block-work-item').forEach((el, i) => {
+			if (el.offsetTop - 150 <= scrollDistance) {
+				document.querySelectorAll('.work-step__item').forEach((el) => {
+					if (el.classList.contains('work-step__item_active')) {
+						el.classList.remove('work-step__item_active');
+					}
+				});
+
+				document.querySelectorAll('.work-step__item')[i].classList.add('work-step__item_active');
+			}
+		});
+	}
 });
 
 /* Раскрытие / Скрытие меню */
@@ -24,26 +42,6 @@ document.querySelectorAll('.menu-top__link').forEach(el => {
 
 		document.querySelector('.menu-top').classList.remove('menu-top_open');
 	});
-});
-
-/* Активные пункты "Как работает сервис" при прокрутке */
-window.addEventListener('scroll', () => {
-
-	let scrollDistance = window.scrollY;
-
-	if (window.innerWidth > 767) {
-		document.querySelectorAll('.block-work-item').forEach((el, i) => {
-			if (el.offsetTop - 150 <= scrollDistance) {
-				document.querySelectorAll('.work-step__item').forEach((el) => {
-					if (el.classList.contains('work-step__item_active')) {
-						el.classList.remove('work-step__item_active');
-					}
-				});
-
-				document.querySelectorAll('.work-step__item')[i].classList.add('work-step__item_active');
-			}
-		});
-	}
 });
 
 /* О Команде на мобилке */
