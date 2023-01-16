@@ -24,7 +24,7 @@ window.addEventListener('scroll', () => {
 
 	let scrollDistance = window.scrollY;
 
-	if (window.innerWidth > 768) {
+	if (window.innerWidth > 767) {
 		document.querySelectorAll('.block-work-item').forEach((el, i) => {
 			if (el.offsetTop - 150 <= scrollDistance) {
 				document.querySelectorAll('.work-step__item').forEach((el) => {
@@ -38,6 +38,21 @@ window.addEventListener('scroll', () => {
 		});
 	}
 });
+
+/* О Команде на мобилке */
+if (window.innerWidth < 768)
+{
+	new Carousel(document.querySelector(".block-team-items"), {
+		'slidesPerPage' : 'auto',
+		'center' : false,
+		'infinite': false,
+		Navigation: false,
+		Dots: false,
+		classNames: {
+			viewport: "block-team-items__viewport",
+		},
+	});
+}
 
 /* Карусель "Нам доверяют" */
 new Carousel(document.querySelector(".block-clients__carousel"), {
