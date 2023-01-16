@@ -27,11 +27,14 @@ $color-text: #434343;
 $color-link: #4BA6FA;
 $color-footer: #E5F1FD;
 
+$transparent: rgba(255, 255, 255, 0);
+
 $color-gray1: #222;
 $color-gray2: #4A4A4A;
 $color-gray3: #373737;
 $color-gray4: #DADADA;
 
+$opacity-header: rgba(255, 255, 255, .9);
 $opacity1: rgba(0, 0, 0, 0.15);
 $opacity2: rgba(0, 0, 0, 0.1);
 $opacity3: rgba(255, 255, 255, 0.3);

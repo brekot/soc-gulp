@@ -1,10 +1,17 @@
 .header-main {
-    position: absolute;
+    position: fixed;
     z-index: 20;
     top: 0;
     left: 0;
     right: 0;
     padding: 24px 0;
+    border-bottom: 1px solid $transparent;
+    transition: .5s;
+
+    &_fixed {
+        background-color: $opacity-header;
+        border-bottom-color: $opacity9;
+    }
 
     &__inner {
         display: flex;

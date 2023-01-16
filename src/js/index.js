@@ -1,5 +1,12 @@
 import { Fancybox, Carousel } from "@fancyapps/ui";
 
+/* Фиксируем шапку */
+window.addEventListener('scroll', function() {
+
+	if (scrollY > 0) this.document.querySelector('.header-main').classList.add('header-main_fixed');
+	else this.document.querySelector('.header-main').classList.remove('header-main_fixed');
+});
+
 /* Раскрытие / Скрытие меню */
 document.querySelector('.menu-top-btn').addEventListener('click', function(){
 
